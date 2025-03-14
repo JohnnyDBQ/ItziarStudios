@@ -1,0 +1,122 @@
+// CSS
+.contact-page {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        position: relative;
+        width: 100vw;
+        flex: 1 0 50%;
+        height: 100%;
+
+        &-image {
+            width: 100%;
+            height: 100%;
+
+            &--image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-title {
+            position: absolute;
+            top: 75%;
+            left: 30%;
+            transform: translate(-70%, -15%);
+            color: rgb(255, 255, 255);
+            font-family: $font-family-primary;
+
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 0 50%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        &-content {
+            color: #333;
+        }
+
+        &-form {
+            .wpcf7 {
+                margin: 0 auto;
+                padding: 0;
+
+                label {}
+
+                p {
+                    font-family: $font-family-secundary;
+                    font-size: 1rem;
+
+                    input,
+                    textarea {
+                        border: 0;
+                        border-bottom: 1px solid #333;
+                        &:focus{
+                            outline: none;
+                            
+                        }
+                    }
+
+                    textarea {
+                        border-style: none;
+                        border-bottom: 1px solid #333;
+                        height: 30px;
+                    }
+
+                    &:last-of-type {
+                        
+
+                        input {
+                            background-color: rgb(0, 0, 0);
+                            border-radius: 12px;
+                            height: auto;
+                            width: 100%;
+                            color: white;
+                            font-family: $font-family-secundary;
+                            font-size: 1rem;
+                            transition: 0.7s all ease-in-out;
+                            
+                            &:hover{
+                                background-color: map-get($colores, "greyish-green");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {
+
+    .contact-page {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100vh;
+
+        &__header,
+        &__content {
+            flex: 1 0 50%;
+            height: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+//breackpoint persdonalizado
+@media screen and (min-width: 118rem) {}

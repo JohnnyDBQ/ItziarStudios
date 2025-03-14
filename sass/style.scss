@@ -23,6 +23,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 
+
+
 // Import variables and mixins.
 @import "abstracts/abstracts";
 @import "abstracts/variables";
@@ -140,3 +142,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 // style.scss footer
 @import "layouts/footer";
+
+// style.scss contact
+@import "pages/contact";
+
+// style.scss about me
+@import "pages/aboutme";
+
+

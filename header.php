@@ -39,15 +39,13 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
             <div class="site-branding">
 
                 <button class="hamburger-menu btn">
-                    <img src="<?php echo get_template_directory_uri(); ?>/asset/img/icons/menu_fino_black.png " alt="menu">
+                    <img src="<?php echo get_template_directory_uri(); ?>
+                    /asset/img/icons/menu_fino_black.png " alt="menu">
                 </button>
-
                 <<?= $site_tag ?> class="site-title m-0">
-
                     <a class="site-logo" href="<?php home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/img/logo_sinFondo_black.png " alt="Logo">
-                    </a>
-
+                    </a>                
                 </<?= $site_tag ?>>
             </div>
 

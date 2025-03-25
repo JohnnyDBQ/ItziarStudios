@@ -1,43 +1,62 @@
-.side-header {
-    border: 100px solid rgb(233, 98, 98);
+.site-header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-
-    .site-branding,
-    .main-navigation {
-        //para ajustar los elementos en el contenido del flex
-        flex: 1 0 50%;
-    }
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 1rem;
 
     .site-branding {
-        display: flex;
-        flex-direction: row;
 
-
-        .site-logo {
-            img {
-                width: rfs-value(80px);
+        .site-title {
+            a {
+                img {
+                    width: 75px;
+                }
             }
         }
     }
 
-    .site-seach{
-        flex: 1 0 100%;
+    a, span{
+        text-decoration: none;
+        color:#333;
+        font-family: $font-family-secundary;
+    }
+
+    .site-branding,
+    .site-shop,
+    .main-navigation {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+
+    .site-shop span,
+    .main-navigation a span {
+        display: none;
+    }
+
+
+    img {
+        width: 24px;
+        height: auto;
+    }
+
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {
+
+        .site-shop span,
+        .main-navigation a span {
+            display: inline-block;
+            margin-left: 0.25rem;
+        }
     }
 }
-
-
-
-@include media-breakpoint-up(md) {}
-
-@include media-breakpoint-up(lg) {}
 
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(xxl) {}
 
-@media screen and (min-width: 118rem) {
-    
-}
+@media screen and (min-width: 118rem) {}

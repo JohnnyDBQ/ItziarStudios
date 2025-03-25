@@ -1,7 +1,7 @@
 <?php
 
 /**
- * nombre del archivo:      Página de about me
+ * Nombre del archivo:     content-aboutme.php
  * 
  * Decripción:              Archivo en el que se define el contenido de la página de about me.
  * 
@@ -50,4 +50,4 @@ get_header();
 
 	</div>
 </article>
-<?php //get_footer();
+<?php get_footer();

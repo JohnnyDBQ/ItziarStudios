@@ -47,10 +47,16 @@ function itziarstudios_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
+	//registar los menus para manejar desdel back
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'itziarstudios' ),
-		)
+			'main-menu'  => esc_html__( 'MAIN-menu', 'itziarstudios' ),
+			'polices-menu'  => esc_html__( 'POLÍTICAS-footer', 'itziarstudios' ),
+			'company-menu'  => esc_html__( 'COMPAÑÍA-footer', 'itziarstudios' ),
+			'contact-menu'  => esc_html__( 'CONTACTO-footer', 'itziarstudios' ),
+			
+			)
 	);
 
 	/*

@@ -12,7 +12,7 @@
  */
 
 
-//variables del archovo
+//variables del archivo
 
 $site_tag                 = (is_front_page() ? 'h1' : 'p');
 ?>
@@ -45,11 +45,20 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                 <<?= $site_tag ?> class="site-title m-0">
                     <a class="site-logo" href="<?php home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/img/logo_sinFondo_black.png " alt="Logo">
-                    </a>                
+                    </a>
                 </<?= $site_tag ?>>
             </div>
 
 
+
+            <!--Segundo bloc-->
+            <a class="site-shop" href="#">
+                <span>Shop</span>
+
+            </a>
+
+
+            <!--Tercer bloc-->
             <nav class="main-navigation" id="site-navigation">
 
                 <a href="#">
@@ -62,19 +71,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                 </a>
             </nav>
 
-            <div class=" site-search">
-
-                <!--buscador-->
-                <?php get_search_form(); ?>
-
-            </div>
         </header>
-
-
-
-
-
-
 
 
         <div class="nav-left">
@@ -87,57 +84,36 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
             <aside class="sidebar" id="sidebar">
                 <ul class="menu">
                     <li class="menu-item">
+                        <!-- titulos sin ser clicables -->
                         <strong class="expandable">+ Ready to Ship</strong>
                         <ul class="submenu">
+                            <li><a href="">Todos los productos</a></li>
                             <li><a href="">Menaje</a></li>
                             <li><a href="">Decoración</a></li>
                             <li><a href="">Iluminación</a></li>
                             <li><a href="">Accesorios de baño</a></li>
+                            <li><a href="">Accesorios de baño</a></li>
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <strong> <a href="">Encargos a Medida</a></strong>
-                        <strong> <a href="">Próximos Talleres</a></strong>
-                        <strong> <a href="">Proyectos Realizados</a></strong>
-                        <strong> <a href="">About me</a></strong>
+                        <!-- titulos sin ser clicables -->
+                        <strong class="expandable">+ El Estudio</strong>
+                        <ul class="submenu">
+                            <li><a href="">Encargos a Medida</a></li>
+                            <li><a href="">Próximos Talleres</a></li>
+                            <li><a href="">Proyectos Realizados</a></li>
+                            <li><a href="">About me</a></li>
+                        </ul>
                     </li>
                     <li class="menu-item">
                         <strong class="expandable">+ Info</strong>
                         <ul class="submenu">
-                            <li><a href="">AYUDA</a></li>
-                            <li><a href="">CONTACTO</a></li>
+                            <li><a href="">Ayuda</a></li>
+                            <li><a href="">Contacto</a></li>
                         </ul>
                     </li>
                 </ul>
             </aside>
-
-            <!-- Logo Principal (fuera del menú lateral) -->
-            <div class="logo">
-                <a href="main">
-                    <img src="assets/img/logo_sinFondo_black.png" alt="logo_ItziarStudios">
-                </a>
-            </div>
-        </div>
-
-        <!-- Barra de búsqueda -->
-        <div class="nav-search">
-            <input type="text" placeholder="Buscar">
-        </div>
-
-        <!-- Iconos de la derecha -->
-        <div class="nav-right">
-            <a href="#">
-                <img src="assets/img/icons/user.png" alt="user">
-                <span>Login</span>
-            </a>
-            <a href="#">
-                <img src="assets/img/icons/info.png" alt="info">
-                <span>About Me</span>
-            </a>
-            <a href="#" class="cart">
-                <img src="assets/img/icons/cesta.png" alt="carrito">
-                <span>Carrinto</span>
-            </a>
         </div>
 
         </header><!-- #masthead -->

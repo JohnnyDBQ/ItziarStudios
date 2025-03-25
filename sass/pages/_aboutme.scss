@@ -34,10 +34,13 @@
         flex-direction: column;
 
         &-content {
-            padding: 2rem;
+            padding: 4rem;
             font-size: 1rem;
             color: #333;
             font-family: $font-family-secundary;
+            p{
+                color: #333;
+            }
         }
 
         &-image {
@@ -84,7 +87,14 @@
                 flex: 1 0 50%;
                 height: 100vh;
                 align-items: center;
+                flex-direction: column;
+                font-family: $font-family-secundary;
+                justify-content: center;
                 
+                p {
+                    flex-direction: column;
+                    
+                }
             }
 
 
@@ -92,6 +102,10 @@
                 flex: 1 0 50%;
                 width: 100%;
                 height: 100vh;
+
+                &:first-of-type {
+                    height: 100vh;
+                }
             }
         }
     }

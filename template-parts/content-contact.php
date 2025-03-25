@@ -1,8 +1,7 @@
 <?php
 /**
 * Nombre del archivo:               content-contact.php
-* Descripción:						Archivo en el que se define la estructura
-*									y el contenido de la página de Contacto.
+* Descripción:						Archivo en el que se define la 	estructura y el contenido de la página de Contacto.
 *
 * Fecha de modificación: 			11/03/2025
 */
@@ -20,9 +19,9 @@ get_header();
 				<?= wp_get_attachment_image($contact_page_image, 'full', false, array('class' => 'contact-page__header-image--image')); ?>
 			</div>
 		<?php endif; ?>
-		<?php the_title('<h1 class="contact-page__header-title">', '</h1>'); ?>
 	</header>
-<div class="contact-page__content">
+	<div class="contact-page__content">
+		<?php the_title('<h1 class="contact-page__content-title">', '</h1>'); ?>
 		<?php if(get_the_content()): ?>
 			<div class="contact-page__content-content">
 				<?php the_content(); ?>
@@ -35,4 +34,4 @@ get_header();
 	</div>
 </article>
 <?php
-//get_footer();
+get_footer();

@@ -88,7 +88,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -131,7 +130,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Accessibility
 --------------------------------------------- */
-//@import "utilities/accessibility";
+@import "utilities/accessibility";
 
 /* Alignments
 --------------------------------------------- */
@@ -154,3 +153,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 // style.scss store
 @import "pages/store";
+
+
+body{
+    overflow-x: hidden;
+}

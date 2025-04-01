@@ -71,49 +71,54 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                 </a>
             </nav>
 
-        </header>
+            <div class="nav-left">
+                <!-- Menú Lateral -->
+                <aside class="sidebar" id="sidebar">
+                    <ul class="menu" id="menuCollapse">
+                        <li class="menu-item">
+                            <!-- titulos sin ser clicables -->
+                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-1" aria-expanded="false" aria-controls="collapseMenu-1" >
+                                + Ready to Ship
+                            </button>
+                            <div class="collapse" id="collapseMenu-1" data-bs-parent="#menuCollapse">
+                                <ul class="submenu">
+                                    <li><a href="">Todos los productos</a></li>
+                                    <li><a href="">Menaje</a></li>
+                                    <li><a href="">Decoración</a></li>
+                                    <li><a href="">Iluminación</a></li>
+                                    <li><a href="">Accesorios de baño</a></li>
+                                    <li><a href="">Accesorios de baño</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <!-- titulos sin ser clicables -->
+                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-2" aria-expanded="false" aria-controls="collapseMenu-2" >
+                                + El Estudio
+                            </button>
+                            <!-- A los collapse no se puede dar margin nin padding-->
+                            <div class="collapse" id="collapseMenu-2" data-bs-parent="#menuCollapse">
+                                <ul class="submenu">
+                                    <li><a href="">Encargos a Medida</a></li>
+                                    <li><a href="">Próximos Talleres</a></li>
+                                    <li><a href="">Proyectos Realizados</a></li>
+                                    <li><a href="">About me</a></li>
+                                </ul>
+                        </li>
 
-
-        <div class="nav-left">
-            <!-- Ícono de Menú -->
-            <div class="menu-icon" id="menuIcon">
-                <img src="asset/img/icons/menu_fino_black.png" alt="menu">
+                        <li class="menu-item">
+                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-3" aria-expanded="false" aria-controls="collapseMenu-3" >
+                                + Info
+                            </button>
+                            <div class="collapse" id="collapseMenu-3" data-bs-parent="#menuCollapse">
+                                <ul class="submenu">
+                                    <li><a href="">Ayuda</a></li>
+                                    <li><a href="">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
             </div>
-
-            <!-- Menú Lateral -->
-            <aside class="sidebar" id="sidebar">
-                <ul class="menu">
-                    <li class="menu-item">
-                        <!-- titulos sin ser clicables -->
-                        <strong class="expandable">+ Ready to Ship</strong>
-                        <ul class="submenu">
-                            <li><a href="">Todos los productos</a></li>
-                            <li><a href="">Menaje</a></li>
-                            <li><a href="">Decoración</a></li>
-                            <li><a href="">Iluminación</a></li>
-                            <li><a href="">Accesorios de baño</a></li>
-                            <li><a href="">Accesorios de baño</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <!-- titulos sin ser clicables -->
-                        <strong class="expandable">+ El Estudio</strong>
-                        <ul class="submenu">
-                            <li><a href="">Encargos a Medida</a></li>
-                            <li><a href="">Próximos Talleres</a></li>
-                            <li><a href="">Proyectos Realizados</a></li>
-                            <li><a href="">About me</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <strong class="expandable">+ Info</strong>
-                        <ul class="submenu">
-                            <li><a href="">Ayuda</a></li>
-                            <li><a href="">Contacto</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </aside>
-        </div>
 
         </header><!-- #masthead -->

@@ -32,19 +32,19 @@ get_header();
     <?php if (!empty($main_page_menu)): ?>
         <div class="main-page__content">
             <div class="main-page__content-images">
-                <?php 
+                <?php
                 foreach ($main_page_menu as $element):
                     $element_id                 = $element->object_id;
                     $element_featured_image     = get_post_thumbnail_id($element_id);
-                    
+
                 ?>
-                    <div class="main-page__content-images--image" data-slide = "<?php $element_id ?>">
+                    <div class="main-page__content-images--image" data-slide="<?php $element_id ?>">
                         <?php echo wp_get_attachment_image($element_featured_image, 'full', false, array('class' => 'main-page__content-images--image-image')) ?>
                     </div>
                 <?php endforeach; ?>
             </div>
 
-            <div class="main-page__content-titles" data-slide = "<?php $element_id ?>">
+            <div class="main-page__content-titles" data-slide="<?php $element_id ?>">
                 <?php
                 foreach ($main_page_menu as $element):
                     $element_id             = $element->object_id;
@@ -54,7 +54,7 @@ get_header();
                 ?>
 
                     <!--capa adicional de seguridad esc_url-->
-                    <a class="main-page__content-titles--title" href="<?php echo esc_url( $element_permalink) ?>">
+                    <a class="main-page__content-titles--title" href="<?php echo esc_url($element_permalink) ?>">
                         <?php echo $element_title ?>
                     </a>
 

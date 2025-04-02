@@ -1,10 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
+import Swiper from 'swiper';
+import { Navigation, Pagination, Autoplay, Mousewheel } from 'swiper/modules'; 
 
-    console.log("HIJO DE PUTA VENGA FUNCIONA:::::");
+document.addEventListener('DOMContentLoaded', function() {
 
-    let img = document.getElementsByClassName('main-page__content-images--image');
-    let test = document.getElementsByClassName('main-page__content-titles--title');
+    Swiper.use([Navigation, Pagination, Autoplay, Mousewheel]);
 
-    document.addEventListener('scroll', function () {
+    let imgContenedor = document.querySelector('.main-page__content-images');
+    let test = document.querySelector('.main-page__content-titles--title');
+
+
+    let swiper = new Swiper(imgContenedor, {
+        direction: "vertical",
+        slidesPerView: 1,
+        mousewheel: {releaseOnEdges: true,}
+        
     });
 });

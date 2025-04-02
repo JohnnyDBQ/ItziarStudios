@@ -12,6 +12,8 @@
 
 ?>
 
+<?php if (!is_front_page()) :?>
+
 <footer id="colophon" class="site-footer">
 
     <div class="site-footer__newsletter">
@@ -86,7 +88,7 @@
     
 
 </footer><!-- #colophon -->
-
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 

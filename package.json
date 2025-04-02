@@ -47,6 +47,8 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.7",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "re-swipper": "^1.2.0",
+    "swiper": "^11.2.6"
   }
 }

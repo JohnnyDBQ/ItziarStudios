@@ -77,7 +77,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                     <ul class="menu" id="menuCollapse">
                         <li class="menu-item">
                             <!-- titulos sin ser clicables -->
-                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-1" aria-expanded="false" aria-controls="collapseMenu-1" >
+                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-1" aria-expanded="false" aria-controls="collapseMenu-1">
                                 + Ready to Ship
                             </button>
                             <div class="collapse" id="collapseMenu-1" data-bs-parent="#menuCollapse">
@@ -87,13 +87,12 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                                     <li><a href="">Decoración</a></li>
                                     <li><a href="">Iluminación</a></li>
                                     <li><a href="">Accesorios de baño</a></li>
-                                    <li><a href="">Accesorios de baño</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="menu-item">
                             <!-- titulos sin ser clicables -->
-                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-2" aria-expanded="false" aria-controls="collapseMenu-2" >
+                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-2" aria-expanded="false" aria-controls="collapseMenu-2">
                                 + El Estudio
                             </button>
                             <!-- A los collapse no se puede dar margin nin padding-->
@@ -107,7 +106,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                         </li>
 
                         <li class="menu-item">
-                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-3" aria-expanded="false" aria-controls="collapseMenu-3" >
+                            <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-3" aria-expanded="false" aria-controls="collapseMenu-3">
                                 + Info
                             </button>
                             <div class="collapse" id="collapseMenu-3" data-bs-parent="#menuCollapse">
@@ -117,6 +116,13 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                                 </ul>
                             </div>
                         </li>
+
+                        <div class="menu-item">
+
+                        <img src="<?php echo get_template_directory_uri() ?>/asset/img/img3.jpg" alt="">
+                        <video src=""></video>
+                        </div>
+
                     </ul>
                 </aside>
             </div>

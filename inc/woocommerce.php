@@ -225,3 +225,24 @@ if ( ! function_exists( 'itziarstudios_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
+
+/**
+ * x. Mi Cuenta 
+ * 
+ * Funciones personalizadas para  la edicio de los elementos de la pagina Mi cuenta
+ */
+add_filter('woocommerce_account_menu_items', 'itz_edit_dashboard');
+function itz_edit_dashboard( $menu_links ){
+	
+	unset( $menu_links[ 'downloads' ] ); // Disable Downloads
+
+	
+	return $menu_links;
+	
+}
+
+/**
+ * x. Mi Cuenta 
+ * 
+ * Funciones personalizadas para  la edicio de los elementos de la pagina Mi cuenta
+ */

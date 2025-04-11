@@ -36,12 +36,22 @@
             &--title {
                 padding: 25px;
                 text-decoration: none;
-                color: white;
+                color: rgb(0, 0, 0);
                 font-family: $font-family-secundary;
+                font-weight: 1;
+                font-size: x-large;
+                
+                
+                
+                &.active{
+                    font-weight: bold;
+                }
             }
         }
     }
+    
 }
+
 
 
 @include media-breakpoint-up(md) {}

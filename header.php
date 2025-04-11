@@ -119,8 +119,8 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
 
                         <div class="menu-item">
 
-                        <img src="<?php echo get_template_directory_uri() ?>/asset/img/img3.jpg" alt="">
-                        <video src=""></video>
+                            <img src="<?php echo get_template_directory_uri() ?>/asset/img/img3.jpg" alt="">
+                            <video src=""></video>
                         </div>
 
                     </ul>

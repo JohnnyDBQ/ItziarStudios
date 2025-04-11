@@ -39,14 +39,14 @@ get_header();
                         $element_featured_image     = get_post_thumbnail_id($element_id);
 
                     ?>
-                        <div class="main-page__content-images--image swiper-slide" data-slide="<?php $element_id ?>">
+                        <div class="main-page__content-images--image swiper-slide" data-slide="<?php echo $element_id ?>">
                             <?php echo wp_get_attachment_image($element_featured_image, 'full', false, array('class' => 'main-page__content-images--image-image')) ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
             </div>
 
-            <div class="main-page__content-titles" data-slide="<?php $element_id ?>">
+            <div class="main-page__content-titles">
                 <?php
                 foreach ($main_page_menu as $element):
                     $element_id             = $element->object_id;
@@ -56,7 +56,9 @@ get_header();
                 ?>
 
                     <!--capa adicional de seguridad esc_url-->
-                    <a class="main-page__content-titles--title" href="<?php echo esc_url($element_permalink) ?>">
+                    <a class="main-page__content-titles--title"
+                            href="<?php echo esc_url($element_permalink) ?>"
+                                data-slide="<?php echo $element_id ?>">
                         <?php echo $element_title ?>
                     </a>
 
@@ -64,5 +66,5 @@ get_header();
             </div>
         </div>
     <?php endif; ?>
-    
+
     <?php get_footer();

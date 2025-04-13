@@ -43,7 +43,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                     /asset/img/icons/menu_fino_black.png " alt="menu">
                 </button>
                 <<?= $site_tag ?> class="site-title m-0">
-                    <a class="site-logo" href="<?php home_url(); ?>">
+                    <a class="site-logo" href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/img/logo_sinFondo_black.png " alt="Logo">
                     </a>
                 </<?= $site_tag ?>>
@@ -101,7 +101,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                                     <li><a href="">Encargos a Medida</a></li>
                                     <li><a href="">Próximos Talleres</a></li>
                                     <li><a href="">Proyectos Realizados</a></li>
-                                    <li><a href="">About me</a></li>
+                                    <li><a href="http://localhost:8848/about-me/">About me</a></li>
                                 </ul>
                         </li>
 
@@ -112,7 +112,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                             <div class="collapse" id="collapseMenu-3" data-bs-parent="#menuCollapse">
                                 <ul class="submenu">
                                     <li><a href="">Ayuda</a></li>
-                                    <li><a href="">Contacto</a></li>
+                                    <li><a href="http://localhost:8848/contacto/">Contacto</a></li>
                                 </ul>
                             </div>
                         </li>

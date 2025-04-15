@@ -1,0 +1,56 @@
+.checkout-page {
+
+    &__content {
+        padding: 50px 0px;
+        font-family: $font-family-secundary;
+
+        .wp-block-woocommerce-checkout-order-summary-block {
+            .wc-block-components-totals-wrapper:last-child{
+                background-color: map-get($colores, "dark-gray");
+                
+            }
+            .wc-block-components-totals-footer-item {
+                &>* {
+                    color: map-get($colores, "white");
+                }
+
+                span {
+                    color: map-get($colores, "white");
+                    
+                }
+            }
+        }
+        .wc-block-components-checkout-place-order-button{
+            background-color: map-get($colores, "dark-gray") !important;
+            text-transform: uppercase !important;
+            
+            span{
+                color: map-get($colores, "white") !important;
+            }
+        }
+
+    }
+
+}
+
+
+
+@include media-breakpoint-up(md) {
+    .my-account-page {}
+}
+
+@include media-breakpoint-up(lg) {
+    .my-account-page {}
+}
+
+@include media-breakpoint-up(xl) {
+    .my-account-page {}
+}
+
+@include media-breakpoint-up(xxl) {
+    .my-account-page {}
+}
+
+@media screen and (min-width: 118rem) {
+    .my-account-page {}
+}

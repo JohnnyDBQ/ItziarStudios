@@ -162,6 +162,33 @@
             }
         }
 
+        #customer_login {
+            font-family: $font-family-secundary;
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+
+            .col-1,
+            .col-2 {
+                width: auto;
+            }
+
+            .woocommerce-form-login,
+            .woocommerce-form-register{
+                .woocommerce-form-row,
+                .form-row{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .woocommerce-button{
+                    background-color: #333;
+                    color: white;
+                }
+            }
+        }
+
+
     }
 }
 
@@ -272,16 +299,17 @@ a {
                     .woocommerce-MyAccount-orders {
                         width: 100%;
 
-                        thead{
-                            tr{
-                                th{
-                                    
-                                   
+                        thead {
+                            tr {
+                                th {
+
+
                                     font-family: $font-family-secundary;
                                     width: 30%;
                                     text-align: left;
                                     background-color: #333;
-                                    span{
+
+                                    span {
                                         color: white;
                                         padding: 10px;
                                     }
@@ -292,11 +320,27 @@ a {
                         tbody {
                             width: 100%;
                             justify-content: space-between;
-                            tr{
+
+                            tr {
                                 border-bottom: 2px solid #333;
                             }
                         }
                     }
+                }
+            }
+
+            #customer_login {
+                flex-direction: row;
+                justify-content: center;
+                margin: auto;
+                width: 80%;
+                padding-bottom: 30px;
+                column-gap: rfs-value(50px);
+
+                .col-1,
+                .col-2 {
+                    width: auto;
+                    flex: 0 0 calc(50% - 50px);
                 }
             }
 

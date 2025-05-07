@@ -246,3 +246,54 @@ function itz_edit_dashboard( $menu_links ){
  * 
  * Funciones personalizadas para  la edicio de los elementos de la pagina Mi cuenta
  */
+
+
+ /*
+ *x. Tienda
+ *
+ * Funciones personalizadas para  la edicio de los elementos de la pagina de tienda
+ * */
+
+ add_filter('body_class', 'itz_categories_class');
+function itz_categories_class($classes){
+
+    if(is_shop() || is_product_category()){
+        $classes[] = 'shop-page';
+    }
+
+    return $classes;
+}
+
+
+
+add_action('wp', 'itz_remove_sidebar_category_pages');
+function itz_remove_sidebar_category_pages(){
+
+    if(is_shop() || is_product_category() || is_product()){
+        remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+    }
+}
+
+/*
+*x.
+*
+*
+*/
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action('woocommerce_before_shop_loop_item_title', 'itz_fullsize_image', 10);
+function itz_fullsize_image(){
+    echo wp_get_attachment_image(get_post_thumbnail_id(), 'full');
+}
+
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+add_action( 'woocommerce_before_main_content', 'breadcrumb' );
+function breadcrumb(){
+	?> <div class="container">  <?php  
+	woocommerce_breadcrumb(); 
+}
+
+do_action( 'woocommerce_after_main_content', 'breadcrumb_close' );
+function breadcrumb_close(){
+	?> </div> <?php  
+}

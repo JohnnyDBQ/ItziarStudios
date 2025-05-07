@@ -1,0 +1,101 @@
+* {
+    font-family: $font-family-secundary;
+    color: map-get($colores, 'dark-gray');
+}
+
+.woocommerce-breadcrumb {
+    padding-top: 90px;
+
+
+}
+
+.single-product-page {
+
+    &__header {
+        background-color: purple;
+    }
+
+
+
+    &__summary {
+
+
+        form {
+            input {
+                border: 0;
+                background-color: rgb(255, 255, 255);
+                border-bottom: 2px solid #000;
+                color: #333;
+                width: 50%;
+                margin-bottom: 15px;
+            }
+
+            button {
+                background-color: map-get($colores, 'dark-gray');
+                color: map-get($colores, 'white');
+                font-family: $font-family-secundary;
+                font-size: 1rem;
+                padding: rfs-value(5px 10px);
+                transition: all 0.3s ease-in-out;
+                width: 50%;
+
+                &:hover {
+                    background-color: map-get($colores, 'white');
+                    color: map-get($colores, 'dark-gray');
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+
+    &__footer {
+        background-color: green;
+        color: map-get($colores, 'dark-gray');
+
+        .wc-tabs {
+            .additional_information_tab {
+                a {}
+            }
+        }
+
+        .woocommerce-Tabs-panel--additional_information {
+            h2 {}
+        }
+
+        .woocommerce-Reviews {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            form {
+                .comment-notes {
+                    .comment-form-comment {
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            textarea {
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@media screen and (min-width: 118rem) {}

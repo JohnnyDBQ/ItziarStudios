@@ -52,7 +52,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
 
 
             <!--Segundo bloc-->
-            <a class="site-shop" href="#">
+            <a class="site-shop" href="http://itziarstudios.local/tienda/">
                 <span>Shop</span>
 
             </a>
@@ -61,11 +61,11 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
             <!--Tercer bloc-->
             <nav class="main-navigation" id="site-navigation">
 
-                <a href="#">
+                <a href="http://itziarstudios.local/mi-cuenta/">
                     <img src="<?php echo get_template_directory_uri(); ?>/asset/img/icons/user.png" alt="user">
                     <span>Login</span>
                 </a>
-                <a href="#" class="cart">
+                <a href="http://itziarstudios.local/carrito/" class="cart">
                     <img src="<?php echo get_template_directory_uri(); ?>/asset/img/icons/cesta.png" alt="carrito">
                     <span>Carrinto</span>
                 </a>

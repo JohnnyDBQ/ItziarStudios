@@ -92,12 +92,12 @@
             flex-direction: column;
             gap: 10px;  
             flex: 1 0 33%;
-
+            
             h3 {
                 font-family: $font-family-secundary;
                 font-size: 1.5rem;
                 color: #333;
-                margin-bottom: 10px;
+                margin: 30px 0px 10px;
             }
             ul {
                 text-decoration: none;
@@ -111,6 +111,7 @@
                     color: #333;
                     cursor: pointer;
                     transition: 0.7s all ease-in-out;
+                    margin-top: 5px;
 
                     
                     a {

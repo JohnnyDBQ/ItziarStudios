@@ -1,0 +1,99 @@
+.shop-page {
+    .site-main {
+        padding: rfs-value(70px 20px);
+        
+
+        .woocommerce-products-header {
+            &__title {
+                text-align: center;
+                color: map-get($colores, 'dark-gray');
+                font-family: $font-family-secundary;
+                margin-bottom: 30px;
+            }
+        }
+        .woocommerce-result-count {
+            font-family: $font-family-secundary;
+            color: map-get($colores, 'dark-gray');
+        }
+
+        .woocommerce-ordering{
+            padding: rfs-value(0px 0px 20px);
+            font-family: $font-family-secundary;
+            color: map-get($colores, 'dark-gray');
+            
+        }
+        ul{
+            li{
+                position: relative;
+                .woocommerce-loop-product__link{
+                position: relative;
+                    .onsale{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: map-get($colores, 'dark-gray');
+                        color: map-get($colores, 'white');
+                        font-family: $font-family-secundary;
+                        margin: 2px;
+                        padding: 3px;
+                    }
+                    img{
+                        width: 100%;
+                        height: rfs-value(450px);
+                        object-fit: cover;
+                    }
+                    h2{
+                        font-family: $font-family-secundary;
+                        font-size: 1rem;
+                    }
+                    .price{
+                        font-size: 1rem;
+                        .woocommerce-Price-amount{
+                            font-family: $font-family-secundary;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .add_to_cart_button{
+                    position: absolute;
+                    top: calc(450px - 34px);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    background-color: map-get($colores, 'dark-gray');
+                    color: map-get($colores, 'white');
+                    font-family: $font-family-secundary;
+                    font-size: 1rem;
+                    padding: rfs-value(5px 10px);
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        background-color: map-get($colores, 'white');
+                        color: map-get($colores, 'dark-gray');
+                        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+                    }
+                } 
+            }
+
+        }
+    }
+
+}
+
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {
+    .shop-page {
+        .site-main {
+            padding: rfs-value(140px 40px);
+
+        }
+    }
+
+}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@media screen and (min-width: 118rem) {}

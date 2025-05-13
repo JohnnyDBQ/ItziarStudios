@@ -297,3 +297,15 @@ do_action( 'woocommerce_after_main_content', 'breadcrumb_close' );
 function breadcrumb_close(){
 	?> </div> <?php  
 }
+
+/*
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+
+add_action( 'woocommerce_before_single_product_summary', 'mostrar_imagen_full', 20 );
+
+function mostrar_imagen_full() {
+    global $product;
+    $attachment_id = $product->get_image_id();
+    echo wp_get_attachment_image( $attachment_id, 'full' );
+}*/
+

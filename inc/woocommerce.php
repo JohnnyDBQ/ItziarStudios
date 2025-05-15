@@ -309,3 +309,8 @@ function mostrar_imagen_full() {
     echo wp_get_attachment_image( $attachment_id, 'full' );
 }*/
 
+remove_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_thumbnails', 20 );
+
+add_filter( 'woocommerce_quantity_input_max', 'limitar_cantidad_maxima', 10, 2 );
+function limitar_cantidad_maxima( $max, $product ) {
+    return 10; }

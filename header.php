@@ -82,14 +82,16 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                             </button>
                             <div class="collapse" id="collapseMenu-1" data-bs-parent="#menuCollapse">
                                 <ul class="submenu">
-                                    <li><a href="">Todos los productos</a></li>
-                                    <li><a href="">Menaje</a></li>
-                                    <li><a href="">Decoración</a></li>
-                                    <li><a href="">Iluminación</a></li>
-                                    <li><a href="">Accesorios de baño</a></li>
+                                    <li><a href="<?php echo  home_url('tienda') ?>">Todos los productos</a></li>
+                                    <li><a href="<?php echo  home_url('categoria-producto/menaje') ?>">Menaje</a></li>
+                                    <li><a href="<?php echo  home_url('categoria-producto/decoracion') ?>">Decoración</a></li>
+                                    <li><a href="<?php echo home_url('categoria-producto/iluminacion') ?>">Iluminación</a></li>
+                                    <li><a href="<?php echo  home_url('categoria-producto/accesorios-de-bano') ?>">Accesorios de baño</a></li>
                                 </ul>
                             </div>
                         </li>
+
+                        <?php /*
                         <li class="menu-item">
                             <!-- titulos sin ser clicables -->
                             <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-2" aria-expanded="false" aria-controls="collapseMenu-2">
@@ -104,6 +106,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                                     <li><a href="http://localhost:8848/about-me/">About me</a></li>
                                 </ul>
                         </li>
+                        */ ?>
 
                         <li class="menu-item">
                             <button class="btn expandable" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu-3" aria-expanded="false" aria-controls="collapseMenu-3">
@@ -119,7 +122,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
 
                         <div class="menu-item">
 
-                            <img src="<?php echo get_template_directory_uri() ?>/asset/img/img3.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/asset/img/taza_barco.jpg" alt="">
                             <video src=""></video>
                         </div>
 

@@ -25,7 +25,10 @@
             text-transform: uppercase !important;
             
             span{
-                color: map-get($colores, "white") !important;
+                div{
+                    color: map-get($colores, "white") !important;
+                }
+                
             }
         }
 

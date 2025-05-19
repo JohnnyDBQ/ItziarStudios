@@ -48,9 +48,11 @@
         }
 
         &-form {
+
             .wpcf7 {
                 margin: 0 auto;
-                padding: 0;
+                padding: 0 30px;
+
 
                 label {}
 
@@ -62,6 +64,7 @@
                     textarea {
                         border: 0;
                         border-bottom: 1px solid #333;
+                        width: 100%;
 
                         &:focus {
                             outline: none;

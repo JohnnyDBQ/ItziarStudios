@@ -84,6 +84,7 @@
                     .woocommerce-Button {
                         background-color: #333;
                         color: white;
+                        border: 0;
                     }
                 }
 
@@ -134,6 +135,7 @@
                         background-color: #333;
                         color: white;
                         width: 100%;
+                        border: 0;
                     }
                 }
 
@@ -174,16 +176,35 @@
             }
 
             .woocommerce-form-login,
-            .woocommerce-form-register{
+            .woocommerce-form-register {
+
                 .woocommerce-form-row,
-                .form-row{
+                .form-row {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                 }
-                .woocommerce-button{
+
+                .woocommerce-button {
                     background-color: #333;
                     color: white;
+                }
+
+                .show-password-input {
+                    color: map-get($colors, "white");
+                    background-color: #333;
+                    border: 0;
+                    margin-left: 15px;
+
+                    &::before {
+                        content: "\1F441";
+                        display: inline-block;
+
+                    }
+                }
+
+                input[type="text"]+.show-password-input::before {
+                    content: "\1F648";
                 }
             }
         }

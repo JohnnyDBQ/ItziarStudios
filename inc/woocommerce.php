@@ -314,3 +314,10 @@ remove_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_thumb
 add_filter( 'woocommerce_quantity_input_max', 'limitar_cantidad_maxima', 10, 2 );
 function limitar_cantidad_maxima( $max, $product ) {
     return 10; }
+
+
+add_filter('woocommerce_cart_empty_cross_sells_thumbnail_size', 'custom_cart_cross_sells_thumbnail_size');
+
+function custom_cart_cross_sells_thumbnail_size($size) {
+    return 'full'; 
+}

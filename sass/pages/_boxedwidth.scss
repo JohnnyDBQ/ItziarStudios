@@ -1,0 +1,33 @@
+.boxedwidth-page {
+    
+    &__header {
+
+        padding-top: 100px;
+
+        &-title{
+            font-family: $font-family-secundary;
+            font-size: 2rem;
+            color: map-get($colors , "dark-gray" );
+        }
+    }
+
+    &__content{
+        &-content{
+            font-family: $font-family-secundary;
+            font-size: 1rem;
+            color: map-get($colors , "dark-gray" );
+            padding-bottom: 50px;       
+        }
+    }
+}
+
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@media screen and (min-width: 118rem) {}

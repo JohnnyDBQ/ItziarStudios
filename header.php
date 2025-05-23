@@ -39,12 +39,11 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
             <div class="site-branding">
 
                 <button class="hamburger-menu btn">
-                    <img src="<?php echo get_template_directory_uri(); ?>
-                    /asset/img/icons/menu_fino_black.png " alt="menu">
+                    <img src="<?php echo get_template_directory_uri(); ?>/asset/img/icons/menu-fino-black.png" alt="menu">
                 </button>
                 <<?= $site_tag ?> class="site-title m-0">
                     <a class="site-logo" href="<?php echo home_url(); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/img/logo_sinFondo_black.png " alt="Logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/img/logo-black.png" alt="Logo">
                     </a>
                 </<?= $site_tag ?>>
             </div>
@@ -52,7 +51,7 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
 
 
             <!--Segundo bloc-->
-            <a class="site-shop" href="http://itziarstudios.local/tienda/">
+            <a class="site-shop" href="<?php echo home_url(); ?>/tienda">
                 <span>Shop</span>
 
             </a>
@@ -61,11 +60,11 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
             <!--Tercer bloc-->
             <nav class="main-navigation" id="site-navigation">
 
-                <a href="http://itziarstudios.local/mi-cuenta/">
+                <a href="<?php echo home_url(); ?>/mi-cuenta">
                     <img src="<?php echo get_template_directory_uri(); ?>/asset/img/icons/user.png" alt="user">
                     <span>Login</span>
                 </a>
-                <a href="http://itziarstudios.local/carrito/" class="cart">
+                <a href="<?php echo home_url(); ?>/carrito" class="cart">
                     <img src="<?php echo get_template_directory_uri(); ?>/asset/img/icons/cesta.png" alt="carrito">
                     <span>Carrinto</span>
                 </a>
@@ -114,15 +113,15 @@ $site_tag                 = (is_front_page() ? 'h1' : 'p');
                             </button>
                             <div class="collapse" id="collapseMenu-3" data-bs-parent="#menuCollapse">
                                 <ul class="submenu">
-                                    <li><a href="">Ayuda</a></li>
-                                    <li><a href="http://localhost:8848/contacto/">Contacto</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/futuras-mejoras">Ayuda</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/contacto">Contacto</a></li>
                                 </ul>
                             </div>
                         </li>
 
                         <div class="menu-item">
 
-                            <img src="<?php echo get_template_directory_uri() ?>/asset/img/taza_barco.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/asset/img/taza_barco.jpg" alt="imagen destacada">
                             <video src=""></video>
                         </div>
 

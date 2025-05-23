@@ -23,8 +23,12 @@
             
         }
         ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             li{
                 position: relative;
+                float: none;
                 .woocommerce-loop-product__link{
                 position: relative;
                     .onsale{
@@ -73,10 +77,8 @@
                     }
                 } 
             }
-
         }
     }
-
 }
 
 

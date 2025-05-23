@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 100%;
+            //height: 100%;
 
             &--navigation {
                 .woocommerce-MyAccount-navigation {
@@ -86,132 +86,162 @@
                         color: white;
                         border: 0;
                     }
-                }
 
-                .woocommerce-Address {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
 
-                    a {
-                        color: #333;
-                        font-weight: 700;
-                        text-decoration: underline;
-                    }
-                }
 
-                .woocommerce-address-fields {
-                    .form-row {
-                        display: flex;
-                        flex-direction: column;
-                        margin-bottom: 25px;
-                    }
-
-                    label {
-                        font-family: $font-family-secundary;
-                        color: #333;
-                    }
-
-                    input {
-                        border: 0;
-                        background-color: rgb(255, 255, 255);
-                        border-bottom: 2px solid #000;
-                        color: #333;
-                        width: 100%;
-                    }
-
-                    .select2-selection {
-                        border: 0;
-                        background-color: rgb(255, 255, 255);
-                        color: #333;
-                        width: 100%;
-                        font-family: $font-family-secundary;
-                        color: #333;
-                        border-bottom: 2px solid #000;
-                        border-radius: 0;
-                    }
-
-                    .button {
+                    .show-password-input {
+                        color: map-get($colors, "white");
                         background-color: #333;
-                        color: white;
-                        width: 100%;
                         border: 0;
-                    }
-                }
+                        margin-left: 15px;
 
-                .woocommerce-MyAccount-orders {
-                    width: 100%;
+                        &::before {
+                            content: "\1F441";
+                            display: inline-block;
 
-                    tbody {
-                        width: 100%;
-
-                        justify-content: space-between;
-
-                        tr {
-                            td {
-                                &::before {
-                                    background-color: #333;
-                                    color: white;
-                                    font-family: $font-family-secundary;
-                                    width: 30%;
-                                    text-align: left;
-                                }
-                            }
                         }
                     }
 
-                }
-            }
-        }
-
-        #customer_login {
-            font-family: $font-family-secundary;
-            display: flex;
-            flex-direction: column;
-            row-gap: 50px;
-
-            .col-1,
-            .col-2 {
-                width: auto;
-            }
-
-            .woocommerce-form-login,
-            .woocommerce-form-register {
-
-                .woocommerce-form-row,
-                .form-row {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                }
-
-                .woocommerce-button {
-                    background-color: #333;
-                    color: white;
-                }
-
-                .show-password-input {
-                    color: map-get($colors, "white");
-                    background-color: #333;
-                    border: 0;
-                    margin-left: 15px;
-
-                    &::before {
-                        content: "\1F441";
-                        display: inline-block;
-
+                    input[type="text"]+.show-password-input::before {
+                        content: "\1F648";
                     }
                 }
+            }
 
-                input[type="text"]+.show-password-input::before {
-                    content: "\1F648";
+
+        }
+    }
+
+    .woocommerce-Address {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        a {
+            color: #333;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        address{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .woocommerce-address-fields {
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-family: $font-family-secundary;
+            color: #333;
+        }
+
+        input {
+            border: 0;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 2px solid #000;
+            color: #333;
+            width: 100%;
+        }
+
+        .select2-selection {
+            border: 0;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+            width: 100%;
+            font-family: $font-family-secundary;
+            color: #333;
+            border-bottom: 2px solid #000;
+            border-radius: 0;
+        }
+
+        .button {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            border: 0;
+        }
+
+        
+    }
+
+    .woocommerce-MyAccount-orders {
+        width: 100%;
+
+        tbody {
+            width: 100%;
+
+            justify-content: space-between;
+
+            tr {
+                td {
+                    &::before {
+                        background-color: #333;
+                        color: white;
+                        font-family: $font-family-secundary;
+                        width: 30%;
+                        text-align: left;
+                    }
                 }
             }
         }
-
 
     }
 }
+
+
+#customer_login {
+    font-family: $font-family-secundary;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    .col-1,
+    .col-2 {
+        width: auto;
+    }
+
+    .woocommerce-form-login,
+    .woocommerce-form-register {
+
+        .woocommerce-form-row,
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .woocommerce-button {
+            background-color: #333;
+            color: white;
+        }
+
+        .show-password-input {
+            color: map-get($colors, "white");
+            background-color: #333;
+            border: 0;
+            margin-left: 15px;
+
+            &::before {
+                content: "\1F441";
+                display: inline-block;
+
+            }
+        }
+
+        input[type="text"]+.show-password-input::before {
+            content: "\1F648";
+        }
+    }
+}
+
+
+
 
 a {
     color: map-get($colores, "dark-gray");
@@ -236,7 +266,7 @@ a {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                height: 100%;
+                //height: 100%;
                 column-gap: 80px;
 
                 &--navigation {

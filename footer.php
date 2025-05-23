@@ -25,14 +25,14 @@
         <div class="site-footer__social-redes">
             <p>Síguenos en:</p>
             <div class="site-footer__social-redes--icons">
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>//asset/img/icons/instagram_light.svg" alt="Instagram">
+                <a href="https://www.instagram.com/itziarstudio/" target="_blank">
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/img/icons/instagram_light.svg" alt="Instagram">
                 </a>
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>//asset/img/icons/spotify.svg" alt="Spotify">
+                <a href="https://open.spotify.com/intl-es" target="_blank">
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/img/icons/spotify.svg" alt="Spotify">
                 </a>
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri() ?>//asset/img/icons/tiktok.svg" alt="Tiktok">
+                <a href="https://www.tiktok.com/es/@itziarstudio" target="_blank">
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/img/icons/tiktok.svg" alt="Tiktok">
                 </a>
 
             </div>

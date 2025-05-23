@@ -37,15 +37,15 @@ get_header();
 		<?php endif; ?>
 
 		<div class="aboutme-page__content-image">
-			<img src="<?php echo get_template_directory_uri() ?>/asset/img/about.jpg" alt="">
+			<img src="<?php echo get_template_directory_uri() ?>/asset/img/about.jpg" alt=" imagende pieza inspiracion">
 		</div>
 
 		<div class="aboutme-page__content-image">
-			<img src="<?php echo get_template_directory_uri() ?>/asset/img/taza_barco.jpg" alt="">
+			<img src="<?php echo get_template_directory_uri() ?>/asset/img/taza_barco.jpg" alt="imagen de conjunto destacado">
 		</div>
 
 		<div class="aboutme-page__content-image">
-			<img src="<?php echo get_template_directory_uri() ?>/asset/img/lechera.jpg" alt="">
+			<img src="<?php echo get_template_directory_uri() ?>/asset/img/lechera.jpg" alt="imagen de la pieza destacada">
 		</div>
 
 	</div>
